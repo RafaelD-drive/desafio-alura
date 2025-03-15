@@ -1,28 +1,71 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-
-let nombreDeAmigo = []; // Cambia a un array vacío
+let amigosIngresados = [];
 
 function agregarAmigo() {
-   // alert('Agregado');
-    let amigo = String(document.getElementById("amigo").value);
+    let amigo = String(document.getElementById("amigo").value).trim(); 
+
+    if (amigo === "") { 
+
+        alert("Por favor, inserte un nombre."); 
+        return; 
+
+    } 
     
-    nombreDeAmigo.push(amigo); // Agrega el nombre completo al array
-    
+    amigosIngresados.push(amigo); 
+    console.log(amigosIngresados); 
     limpiarCaja();
-    
-    console.log(nombreDeAmigo); // Muestra el array completo
+    mostrarAmigos(); 
 }
 
+function limpiarCaja() {
 
-function limpiarCaja(){
-    document.querySelector('#amigo').value = '';
-    
+    document.querySelector('#amigo').value = ''; 
 }
 
+function mostrarAmigos() {
+    let lista = document.getElementById("listaAmigos"); 
+
+
+    lista.innerHTML = ""; 
+
+    for (let iterAmigos = 0; iterAmigos < amigosIngresados.length; iterAmigos++) { 
+
+
+        let li = document.createElement("li"); 
+
+        li.textContent = amigosIngresados[iterAmigos]; 
+        lista.appendChild(li); 
+    }
+}
+function sortearAmigo() {
+
+    if (amigosIngresados.length === 0) { 
+        alert("No hay amigos disponibles para sortear. Por favor, añada amigos primero.");
+        return;
+
+
+    } else{ 
+        // Genera un número aleatorio entre 0 y la longitud del array menos 1
+
+
+        let indiceAleatorio = Math.floor(Math.random() * amigosIngresados.length);
+        
+        // Selecciona un amigo al azar
+        let amigoSorteado = amigosIngresados[indiceAleatorio];
+        
+        // Muestra el resultado
+
+        let resultadoLista = document.getElementById("resultado");
+        resultadoLista.innerHTML = "";
+
+        let li = document.createElement("li");
+        li.textContent = `Tu amigo secreto es: ${amigoSorteado}`; 
 
 
 
-
+        resultadoLista.appendChild(li);
+        
+    }
+}
 
  
      
