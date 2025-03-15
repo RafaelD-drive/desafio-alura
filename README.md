@@ -1,5 +1,6 @@
-![Imagen_con_el_titulo_del_juego](https://github.com/user-attachments/assets/6ea6bf56-f804-4709-827f-cd0220bf52a5)
-
+<div align="center">
+  <img src=https://github.com/user-attachments/assets/6ea6bf56-f804-4709-827f-cd0220bf52a5 width="700" alt="Imagen del titulo del Juego">
+</div>
 -------------------------------------------------------------------------------------------------------------------------------------
 Bienvenido al proyecto "Amigo Secreto". Esta aplicación le permitirá agregar los nombres de sus amigos y sortear un amigo secreto de entre estos de manera rapida y sencilla.
 
@@ -12,8 +13,10 @@ Cómo usar
 Agregar amigos: Escriba el nombre de un amigo en el campo de texto y haga clic en el botón "Añadir". Se puede repetir este paso para agregar tantos amigos como desee.
 
 Sortear amigo secreto: Una vez que haya agregado al menos un amigo, haga clic en el botón "Sortear amigo". La aplicación automáticamente seleccionará un amigo al azar y le mostrará el resultado.
-![Gif_de_como_usar_el_juego](https://github.com/user-attachments/assets/250527b6-e97e-4dc2-8367-3a232f1998cd)
 
+<div align="center">
+  <img src=https://github.com/user-attachments/assets/250527b6-e97e-4dc2-8367-3a232f1998cd width="600" alt="Gif tutorial de como utilizar el juego">
+</div>
 
 
 Estructura del proyecto
@@ -26,10 +29,11 @@ app.js: Este archivo contiene la lógica de la aplicación, donde se manejan las
 Requisitos
 ----------------------------------------------------------------------------------------------------------------------------------------
 Para que la aplicación funcione correctamente, asegúrate de tener un navegador web moderno. No se requieren instalaciones adicionales.
-Cabe recalcar que la aplicación NO funcionará si no se agrega ningún nombre, por lo tanto, asegurese de escribir algún nombre antes de clickear el boton "añadir".
-![Imagen_de_error_al_no_escribir_un_nombre](https://github.com/user-attachments/assets/dffbc3f8-de7c-4276-934c-6e1075a7f2d9)
+Cabe recalcar que la aplicación NO funcionará si no se agrega ningún nombre, enviando un mensaje de alerta al usuario. Por lo tanto, asegurese de escribir algún nombre antes de clickear el boton "añadir".
 
-
+<div align="center">
+  <img src=https://github.com/user-attachments/assets/dffbc3f8-de7c-4276-934c-6e1075a7f2d9 width="600" alt="Imagen de mensaje de alerta en caso de no poner ningun nombre">
+</div>
 
 
 Contribuciones
